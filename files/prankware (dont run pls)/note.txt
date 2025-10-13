@@ -1,0 +1,10 @@
+this annoys the user, pls note that this also kinda "eats the cpu"
+like this
+
+CPU used: 16%
+
+-5 minutes later-
+
+CPU used: 100%
+
+also only windows (sorry macos or linux users)
