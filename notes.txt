@@ -1,2 +1,3 @@
 ------------ NOTES/CHAT --------
 random-game-dev: the files folder is files you can download via the webpage.
+ETAModder: i added some xp.css styling to the original page
