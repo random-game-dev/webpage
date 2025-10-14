@@ -1,19 +1,57 @@
 <!DOCTYPE html>
-<title>name (you can change this btw)</title>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>webpage</title>
+  <link rel="stylesheet" href="https://unpkg.com/xp.css">
+  <link rel="stylesheet" href="/styles/style.css">
+</head>
 <body>
-    <button onclick="download()">download</button>
+  <div class="window">
+    <div class="title-bar">
+      <div class="title-bar-text">window title</div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close" id="closeBtn"></button>
+      </div>
+    </div>
+
+    <div class="window-body">
+      <div class="fun-box" id="output">
+        this is where text goes<br><br>
+		newlines don't work so use <code><br></code><br>
+		instead of them. also i kinda<br>
+		just used the code from <a href="https://etamodder.github.io" target="_blank" rel="noopener noreferrer">my site</a><br>
+		so feel free to mess w/ it.
+      </div>
+      <div>
+        <button class="xp-button" id="btnDownload">download files</button>
+      </div>
+    </div>
+
+    <div class="status-bar">
+      <p class="status-bar-field">this is the status bar</p>
+      <p class="status-bar-field">you can delete if u want</p>
+    </div>
+  </div>
+
+  <script>
+    const button = document.getElementById("btnDownload");
+
+	function download() {
+    	window.location.href = 'files/download.zip';
+    	console.log("files downloaded successfully, maybe :)");
+    	alert("files downloaded, maybe they did");
+	}
+
+    button.onclick = () => {
+		download();
+    }
+
+    closeBtn.onclick = () => {
+      alert("you can put some fun closing logic like going back to the homepage here");
+    }
+  </script>
 </body>
-<script>
-function download() {
-    // download all files from the download folder as a .zip
-    window.location.href = 'files/download.zip';
-    console.log("files downloaded successfully, maybe :)");
-    alert("files downloaded, maybe they did")
-}
-// rest of javascript here
-</script>
-<style>
-/* css here */  
-</style>
-<script src="scripts/script.js"></script>
-<link rel="stylesheet" href="styles/98.css">
+</html>
