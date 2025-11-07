@@ -2,6 +2,8 @@
 #include <cmath>
 #include <cstdint>
 
+// what even is this supposed to be -alkonsafe
+
 // Vertex shader stubs
 float vertexShader1(float x, float y) { return x + y; }
 float vertexShader2(float x, float y) { return x - y; }
